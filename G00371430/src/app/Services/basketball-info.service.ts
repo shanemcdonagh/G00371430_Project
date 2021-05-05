@@ -14,11 +14,7 @@ export class BasketballInfoService {
   constructor(private httpClient:HttpClient) { }
 
   // Function : Basketball Teams 
-  getBasketballTeams():Observable<any>{
-    return this.httpClient.get('https://jsonblob.com/api/jsonBlob/decf21b1-ad99-11eb-bf29-714e451a4869');
-  }
-
-  getBasketballPlayers():Observable<any>{
-    return this.httpClient.get('https://www.breakingbadapi.com/api/characters');
+  getBasketballInfo():Observable<any>{
+    return this.httpClient.get('https://jsonblob.com/api/jsonBlob/e4994b9e-ada6-11eb-bf29-6574355cc542');
   }
 }

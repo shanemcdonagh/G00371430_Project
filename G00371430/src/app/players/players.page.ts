@@ -19,9 +19,9 @@ export class PlayersPage implements OnInit {
   // Method: Is called at initialisation of application
   ngOnInit(){
     // Calls method asynchronously - Retrieves data from class
-    this.basketballInfoService.getBasketballPlayers().subscribe(
+    this.basketballInfoService.getBasketballInfo().subscribe(
       (data)=>{
-        this.playerData = data.data; // Initialise array using data retrieved from the website
+        this.playerData = data.stars; // Initialise array using data retrieved from the website
         console.log(this.playerData);
       }
     );

@@ -22,7 +22,7 @@ export class HomePage implements OnInit{
   // Method: Is called at initialisation of application
   ngOnInit(){
     // Calls method asynchronously - Retrieves data from class
-    this.basketballInfoService.getBasketballTeams().subscribe(
+    this.basketballInfoService.getBasketballInfo().subscribe(
       (data)=>{
         this.teamData = data.teams; // Initialise array using data retrieved from the website
         console.log(this.teamData);
