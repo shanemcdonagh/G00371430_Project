@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Players</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let players of playerData">
+    <h2>{{players.city}}</h2>
+    <h2>{{players.last_name}}</h2>
+  </ion-item>
+</ion-content>

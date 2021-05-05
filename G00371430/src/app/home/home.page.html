@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Teams
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- <ul>
+    <li [routerLink]="['/players']" routerDirection="forward">Players</li>
+  </ul> -->
+<ion-list>
+  <ion-item *ngFor="let team of teamData">
+    <ion-avatar slot="start">
+      <img src="{{team.img}}"/>
+    </ion-avatar>
+    <ion-label>
+      <h1>{{team.full_name}}</h1>
+      <p>{{team.conference}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list> 
+</ion-content>
