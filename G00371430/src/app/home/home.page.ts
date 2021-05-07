@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 // Import class of basketball information
 import {BasketballInfoService} from '../Services/basketball-info.service';
 
+import {Storage} from '@ionic/storage'
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -12,12 +14,10 @@ export class HomePage implements OnInit{
 
   // Variables
   teamData: any = [];
-  teamImages: any [];
-  playerData: any = [];
-  images: any = ["../../assets/atlanta.png"];
+  favTeam: string = "";
 
  // Create local instance of class 'BasketballInfoService'
-  constructor(private basketballInfoService: BasketballInfoService) {}
+  constructor(private basketballInfoService: BasketballInfoService, private storage:Storage) {}
 
   // Method: Is called at initialisation of application
   ngOnInit(){
@@ -28,5 +28,11 @@ export class HomePage implements OnInit{
         console.log(this.teamData);
       }
     );
+  }
+
+  // Method: Stores selected team to storage
+  setFavouriteTeam(){
+    this.storage.set('favTeam',this.favTeam)
+    .then().catch();
   }
 }

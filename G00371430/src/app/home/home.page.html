@@ -7,15 +7,22 @@
 </ion-header>
 
 <ion-content>
+  <ion-toolbar>
+    <ion-searchbar debounce="500" showCancelButton="focus" animated></ion-searchbar>
+  </ion-toolbar>
   <ion-list>
+    <ion-radio-group [(ngModel)] ="favTeam" value="team1">
     <ion-item *ngFor="let team of teamData">
-      <ion-avatar slot="end">
+      <ion-avatar slot="start">
         <img src="{{team.img}}"/>
       </ion-avatar>
       <ion-label>
         <h2>{{team.full_name}}</h2>
         <p>{{team.conference}}</p>
       </ion-label>
+      <ion-radio slot="end" [value]="team.full_name"></ion-radio>
     </ion-item>
+    </ion-radio-group>
   </ion-list> 
+  <ion-button expand="block" (click)="setFavouriteTeam()">Set Favourite Team</ion-button>
 </ion-content>

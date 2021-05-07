@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Storage} from '@ionic/storage'
 
 @Component({
   selector: 'app-account',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountPage implements OnInit {
 
-  constructor() { }
+  favTeam: string;
 
-  ngOnInit() {
+  constructor(private storage:Storage) {}
+
+  ngOnInit() { 
+    this.storage.get('favTeam')
+    .then((data)=>{
+      this.favTeam = data;
+    })
+      .catch();
   }
 
 }
