@@ -10,7 +10,6 @@ import { AppRoutingModule } from './app-routing.module';
 // Importing HttpClientModule
 import {HttpClientModule} from '@angular/common/http';
 
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

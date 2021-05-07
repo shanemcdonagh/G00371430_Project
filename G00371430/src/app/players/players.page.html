@@ -1,17 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>All-Stars: 2021</ion-title>
+    <ion-title><center>All-Stars: 2021</center></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let players of playerData">
-      <ion-avatar slot="start">
+      <ion-avatar slot="end">
         <img src="{{players.img}}"/>
       </ion-avatar>
       <ion-label>
-        <h1>{{players.name}}</h1>
+        <h2>{{players.name}}</h2>
         <p>{{players.team}}</p>
       </ion-label>
     </ion-item>
