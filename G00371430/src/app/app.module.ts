@@ -13,12 +13,14 @@ import {HttpClientModule} from '@angular/common/http';
 // Importing IonicStorageModule (grants ability to save data to storage)
 import{IonicStorageModule} from '@ionic/storage';
 
+// Importing Camera (grants ability to capture photo)
+import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule,IonicStorageModule.forRoot()], // added http and storage modules to imports
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [Camera,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

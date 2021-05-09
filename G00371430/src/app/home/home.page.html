@@ -6,23 +6,29 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-toolbar>
+  <ion-searchbar (ionInput) = "filter()"ilterdebounce="500" showCancelButton="focus" animated></ion-searchbar>
+</ion-toolbar>
 <ion-content>
-  <ion-toolbar>
-    <ion-searchbar debounce="500" showCancelButton="focus" animated></ion-searchbar>
-  </ion-toolbar>
+  <!--Ion List-->
   <ion-list>
-    <ion-radio-group [(ngModel)] ="favTeam" value="team1">
+    <!--Radio Group (Used to select an item from the list))-->
+    <ion-radio-group [(ngModel)] ="favTeam">
+    <!-- Item (Outputs each team within the array)-->
     <ion-item *ngFor="let team of teamData">
       <ion-avatar slot="start">
         <img src="{{team.img}}"/>
       </ion-avatar>
       <ion-label>
-        <h2>{{team.full_name}}</h2>
+        <h3>{{team.full_name}}</h3>
         <p>{{team.conference}}</p>
       </ion-label>
       <ion-radio slot="end" [value]="team.full_name"></ion-radio>
     </ion-item>
     </ion-radio-group>
   </ion-list> 
-  <ion-button expand="block" (click)="setFavouriteTeam()">Set Favourite Team</ion-button>
 </ion-content>
+<ion-footer>
+      <!--Button: Used to save selected team to data storage -->
+  <ion-button expand="block" (click)="setFavouriteTeam()">Set Favourite Team</ion-button>
+</ion-footer>

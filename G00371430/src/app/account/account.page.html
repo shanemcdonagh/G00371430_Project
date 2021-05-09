@@ -5,13 +5,26 @@
 </ion-header>
 
 <ion-content>
-  <ion-list-header>Profile</ion-list-header>
-  <ion-avatar class="ion-margin-start">
-    <br>
-    <img src="../../assets/shapes.svg">
-  </ion-avatar>
-
-  <h3>Favourite Team</h3>
-  <p>{{favTeam}}</p>
-  <h3>Favourite Player</h3>
+  <ion-list-header><h3>Profile</h3></ion-list-header>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="{{picture}}"/>
+    </ion-avatar>
+      <ion-button (click)="takePicture()"> Update Profile Picture <ion-icon slot="end" name="camera"></ion-icon></ion-button>      
+  </ion-item>
+  <br><br>
+  <ion-item>
+    <ion-label>Date of Birth</ion-label>
+    <ion-datetime value="1990-02-19" [(ngModel)] ="dateOfBirth" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label>Favourite Team: </ion-label>
+    <ion-label><h3>{{favTeam}}</h3></ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Favourite Player: </ion-label>
+    <ion-label><h3>{{favPlayer}}</h3></ion-label>
+  </ion-item>
 </ion-content>

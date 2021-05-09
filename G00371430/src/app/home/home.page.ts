@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import {BasketballInfoService} from '../Services/basketball-info.service';
 
 import {Storage} from '@ionic/storage'
+import { ValueAccessor } from '@ionic/angular/directives/control-value-accessors/value-accessor';
 
 @Component({
   selector: 'app-home',
@@ -30,9 +31,25 @@ export class HomePage implements OnInit{
     );
   }
 
-  // Method: Stores selected team to storage
+  // Method: Stores selected team to data storage
   setFavouriteTeam(){
-    this.storage.set('favTeam',this.favTeam)
+    this.storage.set('favTeam',this.favTeam) 
     .then().catch();
+  }
+
+
+  // Used to filter searchbar
+  // Reference: https://github.com/ionic-team/ionic-docs/blob/master/src/demos/api/searchbar/index.html
+  // Error fix: http://angular2workaround.blogspot.com/2016/12/error-rs2339-property-style-does-not.html
+  filter(ev: any)
+  {
+    const val = ev.target.value;
+
+    if(val && val.trim() != '')
+    {
+      this.teamData = this.teamData.full_name.filter((item=>{
+        return(item.full_name.toLowerCase().indexOf(val.toLowerCase())>-1);
+      }))
+    }
   }
 }

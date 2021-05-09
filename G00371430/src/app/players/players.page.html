@@ -5,16 +5,26 @@
 </ion-header>
 
 <ion-content>
-  
+  <ion-toolbar>
+    <ion-searchbar debounce="500" showCancelButton="focus" animated></ion-searchbar>
+  </ion-toolbar>
   <ion-list>
-      <ion-item *ngFor="let players of playerData">
-        <ion-avatar slot="end">
-          <img src="{{players.img}}"/>
+    <ion-radio-group [(ngModel)] ="favPlayer">
+      <ion-item *ngFor="let player of playerData">
+        <ion-avatar slot="start">
+          <img src="{{player.img}}"/>
         </ion-avatar>
         <ion-label>
-          <h2>{{players.name}}</h2>
-          <p>{{players.team}}</p>
+          <h3>{{player.name}}</h3>
+          <p>{{player.team}}</p>
         </ion-label>
+        <ion-radio slot="end" [value]="player.name"></ion-radio>
       </ion-item>
+    </ion-radio-group>
   </ion-list> 
 </ion-content>
+<!-- Footer: Displays at the bottom of the page-->
+<ion-footer>
+  <!--Button: Used to save selected team to data storage -->
+<ion-button expand="block" (click)="setFavouritePlayer()">Set Favourite Player</ion-button>
+</ion-footer>
