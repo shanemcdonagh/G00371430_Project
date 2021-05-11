@@ -16,7 +16,7 @@ export class PlayersPage implements OnInit {
 
   // Variables
   playerData: any = []; 
-  favPlayer: string = "";
+  favPlayer: any = "";
 
  // Create local instance of class 'BasketballInfoService' & of class Storage
   constructor(private basketballInfoService: BasketballInfoService,private storage: Storage) {}

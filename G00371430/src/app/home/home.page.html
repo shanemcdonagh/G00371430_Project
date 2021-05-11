@@ -6,9 +6,6 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-toolbar>
-  <ion-searchbar (ionInput) = "filter()"ilterdebounce="500" showCancelButton="focus" animated></ion-searchbar>
-</ion-toolbar>
 <ion-content>
   <!--Ion List-->
   <ion-list>
@@ -23,12 +20,12 @@
         <h3>{{team.full_name}}</h3>
         <p>{{team.conference}}</p>
       </ion-label>
-      <ion-radio slot="end" [value]="team.full_name"></ion-radio>
+      <ion-radio slot="end" [value]="team.img"></ion-radio>
     </ion-item>
     </ion-radio-group>
   </ion-list> 
 </ion-content>
 <ion-footer>
       <!--Button: Used to save selected team to data storage -->
-  <ion-button expand="block" (click)="setFavouriteTeam()">Set Favourite Team</ion-button>
+  <ion-button expand="block" fill="outline" (click)="setFavouriteTeam()">Set Favourite Team</ion-button>
 </ion-footer>

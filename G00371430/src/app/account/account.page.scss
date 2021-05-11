@@ -1,0 +1,25 @@
+// ID: Enables the name input to rename in the center of the toolbar
+#center{
+    text-align:center;
+    padding-right: 5px;
+    font-size: medium;
+}
+
+// ID: Provides some spacing between the top of the page and the avatar (iOS aesthethic issues)
+#spacing{
+    margin-top: 20%;
+    margin-left: 5%;
+    text-align: center;
+    display: inline-flex;
+}
+
+// ID: Used to format the photo button
+#adjust
+{
+    margin-right: 14px;
+}
+
+#font
+{
+    font-size: 20px;
+}

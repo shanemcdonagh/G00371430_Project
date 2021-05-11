@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// Import class of basketball information
+// Import class of basketball information & data
 import {BasketballInfoService} from '../Services/basketball-info.service';
 
 import {Storage} from '@ionic/storage'
@@ -15,7 +15,10 @@ export class HomePage implements OnInit{
 
   // Variables
   teamData: any = [];
-  favTeam: string = "";
+  favTeam: any = "";
+  searchText: string;
+  showSkel: boolean;
+  info: any;
 
  // Create local instance of class 'BasketballInfoService'
   constructor(private basketballInfoService: BasketballInfoService, private storage:Storage) {}
@@ -35,21 +38,5 @@ export class HomePage implements OnInit{
   setFavouriteTeam(){
     this.storage.set('favTeam',this.favTeam) 
     .then().catch();
-  }
-
-
-  // Used to filter searchbar
-  // Reference: https://github.com/ionic-team/ionic-docs/blob/master/src/demos/api/searchbar/index.html
-  // Error fix: http://angular2workaround.blogspot.com/2016/12/error-rs2339-property-style-does-not.html
-  filter(ev: any)
-  {
-    const val = ev.target.value;
-
-    if(val && val.trim() != '')
-    {
-      this.teamData = this.teamData.full_name.filter((item=>{
-        return(item.full_name.toLowerCase().indexOf(val.toLowerCase())>-1);
-      }))
-    }
-  }
+  } 
 }

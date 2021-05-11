@@ -1,13 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title><center>All-Stars: 2021</center></ion-title>
+    <ion-title><center> All-Stars: 2021</center></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-toolbar>
-    <ion-searchbar debounce="500" showCancelButton="focus" animated></ion-searchbar>
-  </ion-toolbar>
   <ion-list>
     <ion-radio-group [(ngModel)] ="favPlayer">
       <ion-item *ngFor="let player of playerData">
@@ -18,7 +15,7 @@
           <h3>{{player.name}}</h3>
           <p>{{player.team}}</p>
         </ion-label>
-        <ion-radio slot="end" [value]="player.name"></ion-radio>
+        <ion-radio slot="end" [value]="player.img"></ion-radio>
       </ion-item>
     </ion-radio-group>
   </ion-list> 
@@ -26,5 +23,5 @@
 <!-- Footer: Displays at the bottom of the page-->
 <ion-footer>
   <!--Button: Used to save selected team to data storage -->
-<ion-button expand="block" (click)="setFavouritePlayer()">Set Favourite Player</ion-button>
+<ion-button expand="block" fill="outline" (click)="setFavouritePlayer()">Set Favourite Player</ion-button>
 </ion-footer>

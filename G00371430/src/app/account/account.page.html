@@ -1,30 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Account</ion-title>
-  </ion-toolbar>
-</ion-header>
 
+<!--ion-toolbar: Displays at the top of the page -->
+  <ion-toolbar>
+    <!-- Div: Used to display profile picture and input box next to one another-->
+    <div id="spacing">
+      <ion-avatar>
+        <img src="{{picture}}"/>
+      </ion-avatar>
+      <!--ion-input: User inputs their name -->
+      <ion-input id="font" placeholder="Enter Name" (ionChange)="updateName()" [(ngModel)]="name"></ion-input>
+      <!--ion-input: User inputs their name -->
+    </div>
+    <ion-button id="adjust" expand="block" fill="clear" (click)="takePicture()"><ion-icon slot="end" name="camera"></ion-icon></ion-button>
+  </ion-toolbar>
 <ion-content>
-  <ion-list-header><h3>Profile</h3></ion-list-header>
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="{{picture}}"/>
-    </ion-avatar>
-      <ion-button (click)="takePicture()"> Update Profile Picture <ion-icon slot="end" name="camera"></ion-icon></ion-button>      
-  </ion-item>
-  <br><br>
-  <ion-item>
-    <ion-label>Date of Birth</ion-label>
-    <ion-datetime value="1990-02-19" [(ngModel)] ="dateOfBirth" placeholder="Select Date"></ion-datetime>
-  </ion-item>
-  <br>
-  <ion-item>
-    <ion-label>Favourite Team: </ion-label>
-    <ion-label><h3>{{favTeam}}</h3></ion-label>
-  </ion-item>
-  
-  <ion-item>
-    <ion-label>Favourite Player: </ion-label>
-    <ion-label><h3>{{favPlayer}}</h3></ion-label>
-  </ion-item>
+  <!-- ion-refresher: When the user pulls the list of data down, the page is refreshed with the new data -->
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title><center><h1>Favourite Team</h1></center></ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <img src="{{favTeam}}"/>
+  </ion-card-content>
+</ion-card>
+
+<!-- ion-card: Displays the selected favourite player -->
+<ion-card>
+  <ion-card-header>
+    <ion-card-title><center><h1>Favourite Player</h1></center></ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <img src="{{favPlayer}}"/>
+  </ion-card-content>
+</ion-card>
 </ion-content>
+<ion-footer>
+  <!-- Input with placeholder -->
+ 
+</ion-footer>
