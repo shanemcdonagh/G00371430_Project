@@ -1,6 +1,8 @@
 # Mobile Application Year 2 Project: NBA Information &amp; Statistics App 
 
-To note: 
+
+
+# To note: 
 
 - All formatting and code was developed with Ionic Lab in mind, to view the application in it's fullest, please view through this feature
 
