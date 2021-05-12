@@ -1,0 +1,452 @@
+{
+  "stars": [
+    {
+      "id": 1,
+      "name": "Nikola Jokic",
+      "team": "Denver Nuggets",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203999.png"
+    },
+    {
+      "id": 2,
+      "name": "Joel Embiid",
+      "team": "Philadelphia 76ers",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203954.png"
+    },
+    {
+      "id": 3,
+      "name": "Giannis Antetokounmpo",
+      "team": "Milwaukee Bucks",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203507.png"
+    },
+    {
+      "id": 4,
+      "name": "Stephen Curry",
+      "team": "Golden State Warriors",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/201939.png"
+    },
+    {
+      "id": 5,
+      "name": "Kawhi Leonard",
+      "team": "LA Clippers",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/202695.png"
+    },
+    {
+      "id": 6,
+      "name": "Luka Dončić",
+      "team": "Dallas Mavericks",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/1629029.png"
+    },
+    {
+      "id": 7,
+      "name": "Donovan Mitchell",
+      "team": "Utah Jazz",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/1628378.png"
+    },
+    {
+      "id": 8,
+      "name": "LeBron James",
+      "team": "Los Angeles Lakers",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/2544.png"
+    },
+    {
+      "id": 9,
+      "name": "Bradley Beal",
+      "team": "Washington Wizards",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203078.png"
+    },
+    {
+      "id": 10,
+      "name": "Kyrie Irving",
+      "team": "Brooklyn Nets",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/202681.png"
+    },
+    {
+      "id": 11,
+      "name": "Kevin Durant",
+      "team": "Brooklyn Nets",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/201142.png"
+    },
+    {
+      "id": 12,
+      "name": "Zion Williamson",
+      "team": "New Orleans Pelicans",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/1629627.png"
+    },
+    {
+      "id": 13,
+      "name": "James Harden",
+      "team": "Brooklyn Nets",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/201935.png"
+    },
+    {
+      "id": 14,
+      "name": "Jason Tatum",
+      "team": "Boston Celtics",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/1628369.png"
+    },
+    {
+      "id": 15,
+      "name": "Jaylen Brown",
+      "team": "Boston Celtics",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/1627759.png"
+    },
+    {
+      "id": 16,
+      "name": "Mike Conley",
+      "team": "Utah Jazz",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/201144.png"
+    },
+    {
+      "id": 17,
+      "name": "Zach LaVine",
+      "team": "Chicago Bulls",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203897.png"
+    },
+    {
+      "id": 18,
+      "name": "Damian Lillard",
+      "team": "Portland Trail Blazers",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203081.png"
+    },
+    {
+      "id": 19,
+      "name": "Paul George",
+      "team": "LA Clippers",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/202331.png"
+    },
+    {
+      "id": 20,
+      "name": "Rudy Gobert",
+      "team": "Utah Jazz",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203497.png"
+    },
+    {
+      "id": 21,
+      "name": "Julius Randle",
+      "team": "New York Knicks",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203944.png"
+    },
+    {
+      "id": 22,
+      "name": "Nikola Vucevic",
+      "team": "Chicago Bulls",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/202696.png"
+    },
+    {
+      "id": 23,
+      "name": "Domantas Sabonis",
+      "team": "Indiana Pacers",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/1627734.png"
+    },
+    {
+      "id": 24,
+      "name": "Chris Paul",
+      "team": "Phoenix Suns",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/101108.png"
+    },
+    {
+      "id": 25,
+      "name": "Ben Simmons",
+      "team": "Philadelphia 76ers",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/1627732.png"
+    },
+    {
+      "id": 26,
+      "name": "Devin Booker",
+      "team": "Phoenix Suns",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/1626164.png"
+    },
+    {
+      "id": 27,
+      "name": "Anthony Davis",
+      "team": "Los Angeles Lakers",
+      "img": "https://cdn.nba.com/headshots/nba/latest/260x190/203076.png"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "conference": "Eastern Conference",
+      "full_name": "Atlanta Hawks",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Atlanta_Hawks_logo.svg/1200px-Atlanta_Hawks_logo.svg.png"
+    },
+    {
+      "id": 2,
+      "conference": "Eastern Conference",
+      "full_name": "Boston Celtics",
+      "img": "https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg"
+    },
+    {
+      "id": 3,
+      "conference": "Eastern Conference",
+      "full_name": "Brooklyn Nets",
+      "img": "https://logos-world.net/wp-content/uploads/2020/05/Brooklyn-Nets-Logo-2012-present.png"
+    },
+    {
+      "id": 4,
+      "conference": "Eastern Conference",
+      "full_name": "Charlotte Hornets",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Charlotte_Hornets_%282014%29.svg/1200px-Charlotte_Hornets_%282014%29.svg.png"
+    },
+    {
+      "id": 5,
+      "conference": "Eastern Conference",
+      "full_name": "Chicago Bulls",
+      "img": "https://history.bulls.com/wp-content/themes/history/images/logo_bullhead.png"
+    },
+    {
+      "id": 6,
+      "conference": "Eastern Conference",
+      "full_name": "Cleveland Cavaliers",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cleveland_Cavaliers_secondary_logo.svg/1186px-Cleveland_Cavaliers_secondary_logo.svg.png"
+    },
+    {
+      "id": 7,
+      "conference": "Western Conference",
+      "full_name": "Dallas Mavericks",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Dallas_Mavericks_logo.svg/1200px-Dallas_Mavericks_logo.svg.png"
+    },
+    {
+      "id": 8,
+      "conference": "Western Conference",
+      "full_name": "Denver Nuggets",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Denver_Nuggets.svg/1200px-Denver_Nuggets.svg.png"
+    },
+    {
+      "id": 9,
+      "conference": "Eastern Conference",
+      "full_name": "Detroit Pistons",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Pistons_logo17.svg/1200px-Pistons_logo17.svg.png"
+    },
+    {
+      "id": 10,
+      "conference": "Western Conference",
+      "full_name": "Golden State Warriors",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/1200px-Golden_State_Warriors_logo.svg.png"
+    },
+    {
+      "id": 11,
+      "conference": "Western Conference",
+      "full_name": "Houston Rockets",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/1200px-Houston_Rockets.svg.png"
+    },
+    {
+      "id": 12,
+      "conference": "Eastern Conference",
+      "full_name": "Indiana Pacers",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Indiana_Pacers.svg/1200px-Indiana_Pacers.svg.png"
+    },
+    {
+      "id": 13,
+      "conference": "Western Conference",
+      "full_name": "LA Clippers",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Los_Angeles_Clippers_%282015%29.svg/1200px-Los_Angeles_Clippers_%282015%29.svg.png"
+    },
+    {
+      "id": 14,
+      "conference": "Western Conference",
+      "full_name": "Los Angeles Lakers",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/1200px-Los_Angeles_Lakers_logo.svg.png"
+    },
+    {
+      "id": 15,
+      "conference": "Western Conference",
+      "full_name": "Memphis Grizzlies",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Memphis_Grizzlies.svg/1200px-Memphis_Grizzlies.svg.png"
+    },
+    {
+      "id": 16,
+      "conference": "Eastern Conference",
+      "full_name": "Miami Heat",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/1200px-Miami_Heat_logo.svg.png"
+    },
+    {
+      "id": 17,
+      "conference": "Eastern Conference",
+      "full_name": "Milwaukee Bucks",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/1200px-Milwaukee_Bucks_logo.svg.png "
+    },
+    {
+      "id": 18,
+      "conference": "Western Conference",
+      "full_name": "Minnesota Timberwolves",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Minnesota_Timberwolves_logo.svg/1200px-Minnesota_Timberwolves_logo.svg.png"
+    },
+    {
+      "id": 19,
+      "conference": "Western Conference",
+      "full_name": "New Orleans Pelicans",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/New_Orleans_Pelicans_logo.svg/1200px-New_Orleans_Pelicans_logo.svg.png"
+    },
+    {
+      "id": 20,
+      "conference": "Eastern Conference",
+      "full_name": "New York Knicks",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/New_York_Knicks_logo.svg/1200px-New_York_Knicks_logo.svg.png"
+    },
+    {
+      "id": 21,
+      "conference": "Western Conference",
+      "full_name": "Oklahoma City Thunder",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Oklahoma_City_Thunder.svg/1200px-Oklahoma_City_Thunder.svg.png"
+    },
+    {
+      "id": 22,
+      "conference": "Eastern Conference",
+      "full_name": "Orlando Magic",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Orlando_Magic_logo.svg/1200px-Orlando_Magic_logo.svg.png"
+    },
+    {
+      "id": 23,
+      "conference": "Eastern Conference",
+      "full_name": "Philadelphia 76ers",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Philadelphia_76ers_logo.svg/1200px-Philadelphia_76ers_logo.svg.png"
+    },
+    {
+      "id": 24,
+      "conference": "Western Conference",
+      "full_name": "Phoenix Suns",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Phoenix_Suns_logo.svg/1200px-Phoenix_Suns_logo.svg.png"
+    },
+    {
+      "id": 25,
+      "conference": "Western Conference",
+      "full_name": "Portland Trail Blazers",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/1200px-Portland_Trail_Blazers_logo.svg.png"
+    },
+    {
+      "id": 26,
+      "conference": "Western Conference",
+      "full_name": "Sacramento Kings",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/SacramentoKings.svg/1200px-SacramentoKings.svg.png"
+    },
+    {
+      "id": 27,
+      "conference": "Western Conference",
+      "full_name": "San Antonio Spurs",
+      "img": "https://banner2.cleanpng.com/20180510/fce/kisspng-san-antonio-spurs-at-t-center-nba-oklahoma-city-th-5af5070c285890.7126937115260075641653.jpg"
+    },
+    {
+      "id": 28,
+      "conference": "Eastern Conference",
+      "full_name": "Toronto Raptors",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Toronto_Raptors_logo.svg/1200px-Toronto_Raptors_logo.svg.png"
+    },
+    {
+      "id": 29,
+      "conference": "Western Conference",
+      "full_name": "Utah Jazz",
+      "img": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/uta.png"
+    },
+    {
+      "id": 30,
+      "conference": "Eastern Conference",
+      "full_name": "Washington Wizards",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Washington_Wizards_logo.svg/1200px-Washington_Wizards_logo.svg.png"
+    }
+  ],
+  "championships": [
+    {
+      "id": 1,
+      "full_name": "Boston Celtics",
+      "championships": 17,
+      "img": "https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg"
+    },
+    {
+      "id": 2,
+      "full_name": "Los Angeles Lakers",
+      "championships": 17,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/1200px-Los_Angeles_Lakers_logo.svg.png"
+    },
+    {
+      "id": 3,
+      "full_name": "Chicago Bulls",
+      "championships": 6,
+      "img": "https://history.bulls.com/wp-content/themes/history/images/logo_bullhead.png"
+    },
+    {
+      "id": 4,
+      "full_name": "Golden State Warriors",
+      "championships": 6,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/1200px-Golden_State_Warriors_logo.svg.png"
+    },
+    {
+      "id": 5,
+      "full_name": "San Antonio Spurs",
+      "championships": 5,
+      "img": "https://banner2.cleanpng.com/20180510/fce/kisspng-san-antonio-spurs-at-t-center-nba-oklahoma-city-th-5af5070c285890.7126937115260075641653.jpg"
+    },
+    {
+      "id": 6,
+      "full_name": "Philadelphia 76ers",
+      "championships": 3,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Philadelphia_76ers_logo.svg/1200px-Philadelphia_76ers_logo.svg.png"
+    },
+    {
+      "id": 7,
+      "full_name": "Detroit Pistons",
+      "championships": 3,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Pistons_logo17.svg/1200px-Pistons_logo17.svg.png"
+    },
+    {
+      "id": 8,
+      "full_name": "Miami Heat",
+      "championships": 3,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/1200px-Miami_Heat_logo.svg.png"
+    },
+    {
+      "id": 9,
+      "full_name": "Houston Rockets",
+      "championships": 2,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/1200px-Houston_Rockets.svg.png"
+    },
+    {
+      "id": 10,
+      "full_name": "New York Knicks",
+      "championships": 2,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/New_York_Knicks_logo.svg/1200px-New_York_Knicks_logo.svg.png"
+    },
+    {
+      "id": 11,
+      "full_name": "Toronto Raptors",
+      "championships": 1,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Toronto_Raptors_logo.svg/1200px-Toronto_Raptors_logo.svg.png"
+    },
+    {
+      "id": 12,
+      "full_name": "Oklahoma City Thunder",
+      "championships": 1,
+      "img": "https://banner2.cleanpng.com/20180510/fce/kisspng-san-antonio-spurs-at-t-center-nba-oklahoma-city-th-5af5070c285890.7126937115260075641653.jpg"
+    },
+    {
+      "id": 13,
+      "full_name": "Washington Wizards",
+      "championships": 1,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Washington_Wizards_logo.svg/1200px-Washington_Wizards_logo.svg.png"
+    },
+    {
+      "id": 14,
+      "full_name": "Portland Trail Blazers",
+      "championships": 1,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/1200px-Portland_Trail_Blazers_logo.svg.png"
+    },
+    {
+      "id": 15,
+      "full_name": "Milwaukee Bucks",
+      "championships": 1,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/1200px-Milwaukee_Bucks_logo.svg.png"
+    },
+    {
+      "id": 16,
+      "full_name": "Atlanta Hawks",
+      "championships": 1,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Atlanta_Hawks_logo.svg/1200px-Atlanta_Hawks_logo.svg.png"
+    },
+    {
+      "id": 17,
+      "full_name": "Sacramento Kings",
+      "championships": 1,
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/SacramentoKings.svg/1200px-SacramentoKings.svg.png"
+    }
+  ]
+}
