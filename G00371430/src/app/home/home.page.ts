@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 // Import class of basketball information & data
-import {BasketballInfoService} from '../Services/basketball-info.service';
+import { BasketballInfoService } from '../Services/basketball-info.service';
 
-import {Storage} from '@ionic/storage'
+// Import 'Storage' class
+import { Storage } from '@ionic/storage'
+
 import { ValueAccessor } from '@ionic/angular/directives/control-value-accessors/value-accessor';
 
 @Component({
@@ -11,23 +13,21 @@ import { ValueAccessor } from '@ionic/angular/directives/control-value-accessors
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit{
+export class HomePage implements OnInit {
 
-  // Variables
+  // Variables: Used to be initalised and set to data storage
   teamData: any = [];
   favTeam: any = "";
-  searchText: string;
-  showSkel: boolean;
-  info: any;
 
- // Create local instance of class 'BasketballInfoService'
-  constructor(private basketballInfoService: BasketballInfoService, private storage:Storage) {}
+  // Create local instance of class 'BasketballInfoService'
+  constructor(private basketballInfoService: BasketballInfoService, private storage: Storage) { }
 
   // Method: Is called at initialisation of application
-  ngOnInit(){
+  ngOnInit() {
+
     // Calls method asynchronously - Retrieves data from class
     this.basketballInfoService.getBasketballInfo().subscribe(
-      (data)=>{
+      (data) => {
         this.teamData = data.teams; // Initialise array using data retrieved from the website
         console.log(this.teamData);
       }
@@ -35,8 +35,8 @@ export class HomePage implements OnInit{
   }
 
   // Method: Stores selected team to data storage
-  setFavouriteTeam(){
-    this.storage.set('favTeam',this.favTeam) 
-    .then().catch();
-  } 
+  setFavouriteTeam() {
+    this.storage.set('favTeam', this.favTeam)
+      .then().catch();
+  }
 }

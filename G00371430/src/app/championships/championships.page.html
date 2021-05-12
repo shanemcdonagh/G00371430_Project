@@ -1,3 +1,4 @@
+<!-- Title Page -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -6,18 +7,21 @@
   </ion-toolbar>
 </ion-header>
 
+<!-- ion-content: Displays content of the page-->
 <ion-content>
   <!--Ion List-->
   <ion-list>
     <!-- Item (Outputs each team within the array)-->
     <ion-item *ngFor="let champion of championData">
+      <!-- ion-avatar: Team logo-->
       <ion-avatar slot="start">
-        <img src="{{champion.img}}"/>
+        <img src="{{champion.img}}" />
       </ion-avatar>
+      <!--ion-label: Team Name and Championship Amount-->
       <ion-label>
         <h2>{{champion.full_name}}</h2>
         <p>Championships: {{champion.championships}}</p>
       </ion-label>
     </ion-item>
-  </ion-list> 
+  </ion-list>
 </ion-content>

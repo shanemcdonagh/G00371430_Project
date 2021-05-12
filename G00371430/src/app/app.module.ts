@@ -7,13 +7,13 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-// Importing HttpClientModule (grants access to retrieve data from a http service)
+// Importing the 'HttpClientModule' class (grants access to retrieve data from a http service)
 import {HttpClientModule} from '@angular/common/http';
 
-// Importing IonicStorageModule (grants ability to save data to storage)
+// Importing the 'IonicStorageModule' class (grants ability to save data to storage)
 import{IonicStorageModule} from '@ionic/storage';
 
-// Importing Camera (grants ability to capture photo)
+// Importing the 'Camera' class (grants ability to capture photo)
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
 @NgModule({

@@ -4,9 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AccountPage } from './account.page';
 
 const routes: Routes = [
-  
-  
-  
   {
     path: '',
     component: AccountPage
@@ -17,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AccountPageRoutingModule {}
+export class AccountPageRoutingModule { }

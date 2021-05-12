@@ -22,12 +22,12 @@ const routes: Routes = [
         loadChildren: () => import('../players/players.module').then(m => m.PlayersPageModule)
       },
       {
-        // User Page
+        // Account Page
         path: 'account',
         loadChildren: () => import('../account/account.module').then(m => m.AccountPageModule)
       },
       {
-        // User Page
+        // Championships Page
         path: 'championships',
         loadChildren: () => import('../championships/championships.module').then(m => m.ChampionshipsPageModule)
       },
@@ -49,4 +49,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

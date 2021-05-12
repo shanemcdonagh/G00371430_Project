@@ -1,3 +1,4 @@
+<!-- Title Page -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -6,26 +7,30 @@
   </ion-toolbar>
 </ion-header>
 
+<!-- ion-content: Displays content of the page-->
 <ion-content>
   <!--Ion List-->
   <ion-list>
     <!--Radio Group (Used to select an item from the list))-->
-    <ion-radio-group [(ngModel)] ="favTeam">
-    <!-- Item (Outputs each team within the array)-->
-    <ion-item *ngFor="let team of teamData">
-      <ion-avatar slot="start">
-        <img src="{{team.img}}"/>
-      </ion-avatar>
-      <ion-label>
-        <h3>{{team.full_name}}</h3>
-        <p>{{team.conference}}</p>
-      </ion-label>
-      <ion-radio slot="end" [value]="team.img"></ion-radio>
-    </ion-item>
+    <ion-radio-group [(ngModel)]="favTeam">
+      <!-- Item (Outputs each team within the array)-->
+      <ion-item *ngFor="let team of teamData">
+        <!-- ion-avatar: Team logo-->
+        <ion-avatar slot="start">
+          <img src="{{team.img}}" />
+        </ion-avatar>
+        <!--ion-label: Team Name and Conference-->
+        <ion-label>
+          <h3>{{team.full_name}}</h3>
+          <p>{{team.conference}}</p>
+        </ion-label>
+        <!-- ion-radio: Provides user with option to select team, updates "favTeam" variable -->
+        <ion-radio slot="end" [value]="team.img"></ion-radio>
+      </ion-item>
     </ion-radio-group>
-  </ion-list> 
+  </ion-list>
 </ion-content>
 <ion-footer>
-      <!--Button: Used to save selected team to data storage -->
+  <!--Button: Used to save selected team to data storage -->
   <ion-button expand="block" fill="outline" (click)="setFavouriteTeam()">Set Favourite Team</ion-button>
 </ion-footer>

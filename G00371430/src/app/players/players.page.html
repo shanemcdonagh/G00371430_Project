@@ -1,27 +1,37 @@
-<ion-header>
+<!-- Title Page -->
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title><center> All-Stars: 2021</center></ion-title>
+    <ion-title>
+      <center> All-Stars: 2021</center>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- ion-content: Displays content of the page-->
 <ion-content>
+  <!--Ion List-->
   <ion-list>
-    <ion-radio-group [(ngModel)] ="favPlayer">
+    <!--Radio Group (Used to select an item from the list))-->
+    <ion-radio-group [(ngModel)]="favPlayer">
+      <!-- Item (Outputs each team within the array)-->
       <ion-item *ngFor="let player of playerData">
+        <!-- ion-avatar: Team logo-->
         <ion-avatar slot="start">
-          <img src="{{player.img}}"/>
+          <img src="{{player.img}}" />
         </ion-avatar>
+        <!--ion-label: Player Name and Team-->
         <ion-label>
           <h3>{{player.name}}</h3>
           <p>{{player.team}}</p>
         </ion-label>
+        <!-- ion-radio: Provides user with option to select a player, updates "favPlayer" variable -->
         <ion-radio slot="end" [value]="player.img"></ion-radio>
       </ion-item>
     </ion-radio-group>
-  </ion-list> 
+  </ion-list>
 </ion-content>
 <!-- Footer: Displays at the bottom of the page-->
 <ion-footer>
-  <!--Button: Used to save selected team to data storage -->
-<ion-button expand="block" fill="outline" (click)="setFavouritePlayer()">Set Favourite Player</ion-button>
+  <!--Button: Used to save selected player to data storage -->
+  <ion-button expand="block" fill="outline" (click)="setFavouritePlayer()">Set Favourite Player</ion-button>
 </ion-footer>
